@@ -1,31 +1,18 @@
-//========= Tugas 1 ==========//
-
-function shoutOut() {
-  console.log("Helo function!");
+function bandingkanAngka(angka1, angka2) {
+  if (angka2 > angka1){
+    console.log(true);
+  }
+  else if (angka2 < angka1){
+    console.log(false);
+  }
+  else if(angka2==angka1){
+    console.log(-1);
+  }
 }
 
-shoutOut();
-
-//========= Tugas 2 ==========//
-
-function calculateMultiply(num1,num2){
-  return num1*num2;
-}
-
-console.log(calculateMultiply(5,6));
-
-//========= Tugas 3 ==========//
-
-function processSentence(n,ag,ad,hob){
-  return "Hi nama saya "+n+", umur saya "+ag+" tahun, saya tinggal di "+ad+", saya hobbynya "+hob;
-}
-
-var name = "Jovi";
-var umur = 22;
-var address = "Jl. Dasana Indah Blok Td8 No.30";
-var hobby = "menyanyi";
-
-completesentence = processSentence(name,umur,address,hobby);
-
-console.log(completesentence);
-
+// TEST CASES
+console.log(bandingkanAngka(5, 8)); // true
+console.log(bandingkanAngka(5, 3)); // false
+console.log(bandingkanAngka(4, 4)); // -1
+console.log(bandingkanAngka(3, 3)); // -1
+console.log(bandingkanAngka(17, 2)); // false
