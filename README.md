@@ -1,1 +1,1 @@
-# Week2-IfElse
+# Week2-Exercises
