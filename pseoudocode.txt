@@ -1,0 +1,60 @@
+/*--NEWTON SECOND LAW--*/
+
+MAKE variable to contain value of ΣF
+MAKE variable to contain value of a
+MAKE variable to contain value of m
+
+COMPUTER a*m
+RECORD result to ΣF
+
+SHOW ΣF
+
+/*--TAHUN KABISAT--*/
+
+PROMPT and RECORD year
+
+MAKE variable a, b, c
+a = year MOD 4
+b = year MOD 100
+c = year MOD 400
+
+if (a+b != 0){
+    SHOW "Tahun Kabisat"
+}
+
+else if (a+b+c == 0){
+    SHOW "Tahun Kabisat"
+}
+
+else {
+    SHOW "Bukan Tahun Kabisat"
+}
+
+/*--LAUNDRY DAY--*/
+
+MAKE variable for cucianCount with value "0"
+MAKE variable for cucian
+PROMPT and RECORD value of cucian
+
+while (cucian > 0) {
+    SHOW "Cucian masuk"
+    cucianCount++
+    cucian--
+}
+
+SHOW "Cucian sudah masuk "+cucianCount
+
+/*--PERIKSA KUKU--*/
+
+MAKE bool var muridKukuPanjang
+
+for (var i; i =< 40; i++) {
+    if (muridKukuPanjang = true) {
+        SHOW "Murid dihukum"
+    }
+
+    else {
+        SHOW "Murid dipuji"
+    }
+}
+
