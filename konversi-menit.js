@@ -2,10 +2,10 @@ function konversiMenit(menit) {
   var jam = Math.floor(menit/60);
   var menitMod = menit % 60;
   if (menitMod < 9){
-    console.log(jam+":0"+menitMod);
+    return jam+":0"+menitMod
   }
   else if (menitMod>9) {
-    console.log(jam+":"+menitMod);
+   return jam+":"+menitMod
   }
   
 }
