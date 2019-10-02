@@ -2,14 +2,14 @@
 
 var perhitungan = 0;
 
-console.log("looping pertama");
+console.log("looping while pertama");
 
 while (perhitungan < 20){
   console.log(perhitungan+" - I Love Coding");
   perhitungan=perhitungan+2;
 }
 
-console.log("looping kedua");
+console.log("looping while kedua");
 
 while (perhitungan > 0){
   console.log(perhitungan+" - I Will become full-stack developer");
@@ -18,13 +18,13 @@ while (perhitungan > 0){
 
 // ======= for ========//
 
-console.log("looping pertama");
+console.log("\nlooping for pertama");
 
 for(var i=0; i<20; i++){
   console.log(i+" - I Love Coding");
 }
 
-console.log("looping kedua");
+console.log("looping for kedua");
 
 for(var i=20; i>0; i--){
   console.log(i+" - I Love Coding");
@@ -33,23 +33,26 @@ for(var i=20; i>0; i--){
 // ======= Ganjil Genap ========//
 
 for (var i=0; i<100; i++){
-  i=i%2;
-  if (i==0){
-    console.log("GENAP");
+  j=i%2;
+  if (j==0){
+    console.log(i+" GENAP");
   }
-  else if (i>0){
-    console.log("GANJIl");
+  else if (j>0){
+    console.log(i+" GANJIl");
   }
 }
 
 //========kelipatan========//
 
-console.log("Pertambahan 2\n    ");
+console.log("\nPertambahan 2\n    ");
 
 for(var i=0; i<100; i+= 2){
   var a=i%3;
   if (a==0){
     console.log(i+" keliapatan 3");
+  }
+  else {
+    console.log("");
   }
 }
 
@@ -62,6 +65,9 @@ for(var i=0; i<100; i+= 5){
   if (a==0){
     console.log(i+" keliapatan 6");
   }
+  else {
+    console.log("");
+  }
 }
 
 console.log("\n");
@@ -72,5 +78,8 @@ for(var i=0; i<100; i+= 9){
   var a=i%10;
   if (a==0){
     console.log(i+" keliapatan 10");
+  }
+  else {
+    console.log("");
   }
 }
