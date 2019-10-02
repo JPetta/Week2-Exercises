@@ -12,10 +12,10 @@ function xo(str) {
   }
 
   if(hurufX.length==hurufO.length){
-    console.log("true")
+    return "true"
   }
   else if(hurufX.length!=hurufO.length){
-    console.log("false")
+    return "false"
   }
 
 }
