@@ -1,27 +1,33 @@
+
 //======== Barisan Bintang =========//
 
 var rows = 5;
 var i = 0;
-while (i < rows){
-  console.log("*");
-  i++
+for (var i =0; i < rows; i++){
+  var bintang="";
+  for (var j = 0; j < rows; j++){
+    bintang += "*"
+  }
+  console.log(bintang)
 }
 
 //======== Barisan Bintang Nested Looping Incremental =========//
 
 for(var i = 1; i <= 5; i++) {
-      console.log("row");
-      for(var j = 1; j<= 5; j++) {
-        console.log("*");  
-      }
+    var bintang = "";
+    for(var j = 1; j<= i; j++) {
+      bintang += "*";  
+    }
+  console.log(bintang);
 }
 
-//======== Barisan Bintang Nested Looping Incremental =========//
+// //======== Barisan Bintang Nested Looping Incremental =========//
 
-// var rows = 5;
-for(var i = 1; i <= 5; i++) {
-      console.log("row");
-      for(var j = 1; j<= i; j++) {
-        console.log("*");  
-      }
+var rows = 5;
+for(var i=rows; i > 0; i--){
+  var bintang ="";
+  for(var j = 1; j<= i; j++){
+    bintang += "*";
+  }
+  console.log(bintang);
 }
